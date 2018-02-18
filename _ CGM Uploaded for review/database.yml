@@ -1,0 +1,49 @@
+users:
+  cm:
+    username: cm
+    articleIds:
+      - 1
+    commentIds:
+      - 1
+      - 2
+      - 3
+articles:
+  '1':
+    id: 1
+    title: titcm
+    url: urlcm
+    username: cm
+    commentIds:
+      - 1
+      - 2
+      - 3
+    upvotedBy: []
+    downvotedBy: []
+    comments:
+      - &ref_0
+        id: 1
+        body: com cm
+        username: cm
+        articleId: 1
+        upvotedBy: []
+        downvotedBy: []
+      - &ref_1
+        id: 2
+        body: cm 2
+        username: cm
+        articleId: 1
+        upvotedBy: []
+        downvotedBy: []
+      - &ref_2
+        id: 3
+        body: 3rd com
+        username: cm
+        articleId: 1
+        upvotedBy: []
+        downvotedBy: []
+nextArticleId: 2
+comments:
+  '1': *ref_0
+  '2': *ref_1
+  '3': *ref_2
+nextCommentId: 4
